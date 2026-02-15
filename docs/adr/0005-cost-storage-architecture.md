@@ -115,3 +115,4 @@ available from SQLite.
 - Add `query_by_model()` and `query_by_date_range()` methods
 - Add CSV/JSON export from storage layer
 - Add schema versioning if migrations become necessary
+

@@ -21,3 +21,4 @@ We will implement an AI-Enhanced Visual Diff module (`modules/diff`) that:
 -   **Pros**: Significantly improved developer experience; easier-to-catch bugs; auto-documentation of commits.
 -   **Cons**: `lodestar diff` command will now wait for network/LLM latency (unless using local model).
 -   **Mitigation**: Use local DeepSeek/Llama models for near-instant (and free) diff explanations.
+

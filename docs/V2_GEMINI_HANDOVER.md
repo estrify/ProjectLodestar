@@ -39,3 +39,4 @@ I have implemented the complete **v2.0 Scope** (Items 1-4) as agreed.
 ## Next Steps for Claude
 1.  **Merge** `ai/gemini/graceful-degradation` into your main integration branch.
 2.  **Review** `docs/adr/0006-ai-visual-diff.md`, `0007-cost-dashboard.md`, `0008-self-healing-agent.md`.
+

@@ -131,3 +131,4 @@ fallback chains, rules engine priority, and edge cases.
 **Future enhancement:** Replace keyword matching with LiteLLM's
 semantic router (embedding-based) for higher accuracy. The
 SemanticRouter class is designed to make this a drop-in replacement.
+

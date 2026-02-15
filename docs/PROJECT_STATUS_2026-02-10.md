@@ -106,3 +106,4 @@ Inter-module communication via `EventBus` pub-sub.
 ---
 
 **Status**: Workstream 5 complete. Ready for Workstream 2 (Monitoring & Analytics).
+

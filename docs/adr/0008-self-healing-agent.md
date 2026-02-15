@@ -24,3 +24,4 @@ We will implement a **Self-Healing Execution Loop** in `modules/agent/executor.p
 ## Consequences
 -   **Pros**: Significantly higher success rate for long-running agent tasks.
 -   **Cons**: Higher token costs due to error analysis calls.
+

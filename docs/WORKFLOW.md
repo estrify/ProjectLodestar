@@ -80,3 +80,4 @@ kill $(cat ~/.lodestar/router.pid)
 2. **Commit often** - Aider auto-commits, but you can `/commit` manually
 3. **Document decisions** - Create ADRs for anything you'll forget
 4. **Check costs** - Watch router logs in `.lodestar/router.log`
+

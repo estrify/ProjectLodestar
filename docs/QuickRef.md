@@ -131,3 +131,4 @@ echo "$(date): Used Claude for complex refactor - ~10k tokens" >> ~/lodestar-cos
 - [Full Documentation](../README.md)
 - [Architecture](ARCHITECTURE.md)
 - [Roadmap](../ROADMAP.md)
+

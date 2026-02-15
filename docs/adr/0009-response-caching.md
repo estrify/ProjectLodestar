@@ -22,3 +22,4 @@ We will implement a **Local Response Cache**.
 ## Consequences
 -   **Pros**: Instant responses for repeated queries; Zero cost for repeats.
 -   **Cons**: Disk usage (minor); Potential for stale answers if external world changes (unlikely for coding tasks).
+

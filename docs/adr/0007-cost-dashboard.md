@@ -24,3 +24,4 @@ We will implement a **Terminal User Interface (TUI)** dashboard using the `rich`
 ## Consequences
 -   **Pros**: High visibility; "cool factor"; immediate feedback loop on costs.
 -   **Cons**: Requires terminal with color support (standard these days).
+

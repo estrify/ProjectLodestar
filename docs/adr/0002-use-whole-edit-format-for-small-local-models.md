@@ -62,3 +62,4 @@ edit-format: whole  # Works reliably with small models
 
 **Alternative considered:**
 - Training/fine-tuning local models - rejected (too complex, defeats "avoid complexity" goal)
+

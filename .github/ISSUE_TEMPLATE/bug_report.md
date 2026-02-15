@@ -1,31 +1,46 @@
----
 name: 🐛 Bug Report
-about: Create a report to help us improve Lodestar
-title: '[BUG] '
-labels: bug
-assignees: ''
+description: Report a bug to help us improve.
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Summary & Steps to Reproduce
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected vs Actual Behavior
+      placeholder: |
+        I expected it to do X, but it did Y.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Info
+      placeholder: |
+        - OS: [e.g. Windows 11]
+        - Version: [e.g. 1.2.3]
+        - Browser: [e.g. Chrome 120]
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklists
+    attributes:
+      label: Checklists
+      options:
+        - label: I have searched existing issues.
+          required: true
+        - label: I have reproduced this in the latest version.
+          required: true
 
----
-
-**Describe the bug**
-A clear and concise description of what the bug is.
-
-**Reproduction Steps**
-Steps to reproduce the behavior:
-1. Run command '...'
-2. See error '...'
-
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Environment (please complete the following information):**
-- OS: [e.g. Ubuntu 22.04]
-- Python Version: [e.g. 3.11.2]
-- Lodestar Version: [e.g. 2.1.0-alpha.1]
-- Router Status: [e.g. Running/Stopped]
-
-**Logs/Screenshots**
-If applicable, add logs (from `~/.lodestar/logs`) or screenshots to help explain your problem.
-
-**Additional context**
-Add any other context about the problem here.

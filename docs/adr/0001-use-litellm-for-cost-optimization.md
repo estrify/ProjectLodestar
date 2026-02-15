@@ -61,3 +61,4 @@ We will use LiteLLM as a routing layer between our coding agent (Aider) and LLM 
 - Add semantic routing based on prompt complexity
 - Implement automatic cost prediction
 - Add fallback chains for resilience
+
